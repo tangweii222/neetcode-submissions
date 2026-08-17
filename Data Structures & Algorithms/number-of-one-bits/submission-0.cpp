@@ -1,0 +1,13 @@
+class Solution {
+public:
+    int hammingWeight(uint32_t n) {
+        int r =0;
+        for(int i=0;i<32;i++){
+            // mask 1<<i
+            if( (1<<i) & n){
+                r++;
+            }
+        }
+        return r;
+    }
+};
